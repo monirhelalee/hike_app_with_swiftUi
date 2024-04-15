@@ -14,6 +14,9 @@
 		EC198BED2BC6FE1800012971 /* hikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198BEC2BC6FE1800012971 /* hikeTests.swift */; };
 		EC198BF72BC6FE1800012971 /* hikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198BF62BC6FE1800012971 /* hikeUITests.swift */; };
 		EC198BF92BC6FE1800012971 /* hikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198BF82BC6FE1800012971 /* hikeUITestsLaunchTests.swift */; };
+		EC198C062BCD16BF00012971 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198C052BCD16BF00012971 /* CardView.swift */; };
+		EC198C092BCD190300012971 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198C082BCD190300012971 /* CustomBackgroundView.swift */; };
+		EC198C0C2BCD1C6200012971 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198C0B2BCD1C6200012971 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		EC198BF22BC6FE1800012971 /* hikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC198BF62BC6FE1800012971 /* hikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hikeUITests.swift; sourceTree = "<group>"; };
 		EC198BF82BC6FE1800012971 /* hikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EC198C052BCD16BF00012971 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EC198C082BCD190300012971 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		EC198C0B2BCD1C6200012971 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +100,12 @@
 		EC198BDA2BC6FE1700012971 /* hike */ = {
 			isa = PBXGroup;
 			children = (
+				EC198C0A2BCD1C2800012971 /* Utility */,
 				EC198BDB2BC6FE1700012971 /* hikeApp.swift */,
 				EC198BDD2BC6FE1700012971 /* ContentView.swift */,
 				EC198BDF2BC6FE1800012971 /* Assets.xcassets */,
 				EC198BE12BC6FE1800012971 /* Preview Content */,
+				EC198C072BCD189F00012971 /* Component */,
 			);
 			path = hike;
 			sourceTree = "<group>";
@@ -125,6 +133,23 @@
 				EC198BF82BC6FE1800012971 /* hikeUITestsLaunchTests.swift */,
 			);
 			path = hikeUITests;
+			sourceTree = "<group>";
+		};
+		EC198C072BCD189F00012971 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				EC198C052BCD16BF00012971 /* CardView.swift */,
+				EC198C082BCD190300012971 /* CustomBackgroundView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		EC198C0A2BCD1C2800012971 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EC198C0B2BCD1C6200012971 /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +283,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC198BDE2BC6FE1700012971 /* ContentView.swift in Sources */,
+				EC198C062BCD16BF00012971 /* CardView.swift in Sources */,
 				EC198BDC2BC6FE1700012971 /* hikeApp.swift in Sources */,
+				EC198C092BCD190300012971 /* CustomBackgroundView.swift in Sources */,
+				EC198C0C2BCD1C6200012971 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
