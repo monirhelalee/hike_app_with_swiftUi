@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    // MARK: - PROPERTIES
+    
+    private let alternativeAppIcons: [String] = [
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Map",
+        "AppIcon-Mushroom",
+        "AppIcon-Camera",
+        "AppIcon-Backpack",
+        "AppIcon-Campfire"
+    ]
+    
     var body: some View {
         List{
             // MARK: - SECTION: HEADER
@@ -60,6 +72,41 @@ struct SettingsView: View {
             } //: HEADER
             .listRowSeparator(.hidden)
             // MARK: - SECTION: ICONS
+            Section(header: Text("Alternate Icons")){
+                ScrollView(.horizontal,showsIndicators: false){
+                    HStack(spacing:12) {
+                        ForEach(alternativeAppIcons.indices,id: \.self) { item in
+                            Button{
+                                print("Tap \(alternativeAppIcons[item])")
+                                UIApplication.shared.setAlternateIconName((alternativeAppIcons[item])){
+                                    error in
+                                    if error != nil {
+                                        print("Failed request to update the app's icon: \(String(describing: error?.localizedDescription))")
+                                    } else {
+                                        print("Success! You have changed the app's icon to \(alternativeAppIcons[item])")
+                                    }
+                                }
+                            } label: {
+                                Image("\(alternativeAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80,height: 80)
+                                    .cornerRadius(16)
+                        }
+                        }
+                    }
+                }
+                .padding(.top,12)
+                
+                Text("Choose your favourite app icon from the collection above.")
+                .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,maxWidth: .infinity)
+                .multilineTextAlignment(.center)
+                .foregroundColor(.secondary)
+                .font(.footnote)
+                .padding(.bottom,12)
+            }//:Section
+            .listRowSeparator(.hidden)
+            // MARK: - SECTION: ABOUT
             
             Section (
                 header: Text("ABOU THE APP"),
@@ -114,8 +161,7 @@ struct SettingsView: View {
                     rowLinkDestination: "https://monirdev.com"
                 )
             }
-            
-            // MARK: - SECTION: ABOUT
+
         }//: LIST
         
     }
