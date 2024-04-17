@@ -61,6 +61,60 @@ struct SettingsView: View {
             .listRowSeparator(.hidden)
             // MARK: - SECTION: ICONS
             
+            Section (
+                header: Text("ABOU THE APP"),
+                footer: HStack{
+                    Spacer()
+                    Text("Copy © All right reserved.")
+                    Spacer()
+                }
+                    .padding(.vertical, 8)
+            ){
+                CustomListRowView(
+                    rowLabel: "Application",
+                    rowIcon: "apps.iphone",
+                    rowContent: "Hike",
+                    rowTinColor: .blue
+                )
+                CustomListRowView(
+                    rowLabel: "Compatibility",
+                    rowIcon: "info.circle",
+                    rowContent: "iOS, iPadOS",
+                    rowTinColor: .red
+                )
+                CustomListRowView(
+                    rowLabel: "Technology",
+                    rowIcon: "swift",
+                    rowContent: "Swift",
+                    rowTinColor: .orange
+                )
+                CustomListRowView(
+                    rowLabel: "Version",
+                    rowIcon: "gear",
+                    rowContent: "1.0",
+                    rowTinColor: .purple
+                )
+                CustomListRowView(
+                    rowLabel: "Developer",
+                    rowIcon: "ellipsis.curlybraces",
+                    rowContent: "Monir Haider",
+                    rowTinColor: .mint
+                )
+                CustomListRowView(
+                    rowLabel: "Designer",
+                    rowIcon: "paintpalette",
+                    rowContent: "Robert Petras",
+                    rowTinColor: .pink
+                )
+                CustomListRowView(
+                    rowLabel: "Website",
+                    rowIcon: "globe",
+                    rowTinColor: .indigo,
+                    rowLinkLabel: "My Portfolio",
+                    rowLinkDestination: "https://monirdev.com"
+                )
+            }
+            
             // MARK: - SECTION: ABOUT
         }//: LIST
         

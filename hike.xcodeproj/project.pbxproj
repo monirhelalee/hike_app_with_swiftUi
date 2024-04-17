@@ -18,6 +18,7 @@
 		EC198C092BCD190300012971 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198C082BCD190300012971 /* CustomBackgroundView.swift */; };
 		EC198C0C2BCD1C6200012971 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC198C0B2BCD1C6200012971 /* ColorExtension.swift */; };
 		EC8790362BCFA68C00CC5657 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8790352BCFA68C00CC5657 /* SettingsView.swift */; };
+		EC8790382BD0067900CC5657 /* CustomListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8790372BD0067900CC5657 /* CustomListRowView.swift */; };
 		ECB871C22BCD32F600C3BE95 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB871C12BCD32F600C3BE95 /* CustomButtonView.swift */; };
 		ECB871C42BCD785900C3BE95 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB871C32BCD785900C3BE95 /* GradientButtonStyle.swift */; };
 		ECB871C62BCD7FDC00C3BE95 /* CustomCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB871C52BCD7FDC00C3BE95 /* CustomCircleView.swift */; };
@@ -56,6 +57,7 @@
 		EC198C082BCD190300012971 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		EC198C0B2BCD1C6200012971 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		EC8790352BCFA68C00CC5657 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EC8790372BD0067900CC5657 /* CustomListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListRowView.swift; sourceTree = "<group>"; };
 		ECB871C12BCD32F600C3BE95 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 		ECB871C32BCD785900C3BE95 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		ECB871C52BCD7FDC00C3BE95 /* CustomCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircleView.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				ECB871C12BCD32F600C3BE95 /* CustomButtonView.swift */,
 				ECB871C52BCD7FDC00C3BE95 /* CustomCircleView.swift */,
 				ECB871C72BCD899600C3BE95 /* MotionAnimationView.swift */,
+				EC8790372BD0067900CC5657 /* CustomListRowView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				EC198BDE2BC6FE1700012971 /* ContentView.swift in Sources */,
 				ECB871C62BCD7FDC00C3BE95 /* CustomCircleView.swift in Sources */,
+				EC8790382BD0067900CC5657 /* CustomListRowView.swift in Sources */,
 				EC198C062BCD16BF00012971 /* CardView.swift in Sources */,
 				EC198BDC2BC6FE1700012971 /* hikeApp.swift in Sources */,
 				ECB871C22BCD32F600C3BE95 /* CustomButtonView.swift in Sources */,
