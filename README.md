@@ -20,8 +20,8 @@
 ## Feature List
 ```
 ├── image changes randomly
-├── animation
-├── Change the app icon from the app
-├── open url
+├── some animation
+├── Dynamic App Icons
+├── open URL
 └── open sheet
 ```
